@@ -6,8 +6,17 @@ using System.Threading.Tasks;
 
 namespace NumberParserExtended
 {
+    /*
+     * This Class contains the main-method
+     * 
+     * 
+     * 
+     */
+
     class Program
     {
+
+       
         static void Main(string[] args)
         {
             

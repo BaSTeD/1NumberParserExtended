@@ -3,12 +3,20 @@ using System.IO;
 
 namespace NumberParserExtended
 {
+    /*
+     * This Class contains some methods to handle a textfile.
+     * 
+     * 
+     * 
+        */
     class Filehandler
     {
         private String path;
         private String[] list;
         private bool b=true;
 
+
+        //This method proofs the path of a file. 
         private void proofPath(String path)
         {
 
@@ -24,6 +32,7 @@ namespace NumberParserExtended
           
         }
 
+        //This method reads all Lines of the textfile.
         public String[] readIn()
         {
             while (b)

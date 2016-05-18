@@ -3,18 +3,27 @@ using System.Text.RegularExpressions;
 
 namespace NumberParserExtended
 {
+    /*
+    * This Class contains the Method, to parse the textnumbers to decimal numbers
+    * 
+    * 
+    * 
+    */
+
     class NumberParser
     {
         private String[] s;
         private int count = 1;
         private Filehandler fh;
 
+        //Constructor
         public NumberParser()
         {
             fh = new Filehandler();
             this.s = fh.readIn();
         }
 
+        //This method parses the textnumbers to decimal numbers.
         public void parseNumbers()
         {
             for (int i = 1; i < s.Length; i+=4)
